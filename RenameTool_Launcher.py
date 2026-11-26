@@ -1,17 +1,8 @@
 """
 Single-file Launcher for Rename Tool V3.5 (modular, cmds-only)
 
-Usage (from Maya Script Editor / Shelf):
----------------------------------------
-import importlib.util, sys
-p = r"E:/00_Programas/AutodeskMaya/Maya2026/Tools/00_Tools/2026/Tool_Rename V2/RenameTool_Launcher.py"
-
-spec = importlib.util.spec_from_file_location("RenameTool_Launcher", p)
-mod = importlib.util.module_from_spec(spec)
-sys.modules[spec.name] = mod
-spec.loader.exec_module(mod)
-mod.launch()
----------------------------------------
+The launcher resolves its package relative to this file, so it works from
+any installation directory.
 """
 
 from __future__ import annotations
